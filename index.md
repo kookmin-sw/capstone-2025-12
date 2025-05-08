@@ -30,21 +30,40 @@ MLS(Multiple Listing Service) 시스템을 통해 미국 부동산 매물 데이
 
 ## 3. 팀 소개
 
-| <div align="center"><img width="60" src="https://github.com/hwna00.png"></div> |
-| :----------------------------------------------------------------------------: |
-|               [하철환(\*\*\*\*3157)](https://github.com/hwna00)                |
-|                                   Full Stack                                   |
+| <img width="60" src="https://github.com/hwna00.png"> |
+| :--------------------------------------------------: |
+|  [하철환(\*\*\*\*3157)](https://github.com/hwna00)   |
+|                      Full Stack                      |
 
 ## 4. 주요 기능
+
+### 매물 검색
+
+### 한국어 변환
 
 ## 5. 시스템 구조
 
 <div align="center">
-  <img src="./img/Cozying System Architecture.png" alt="Cozying System Architecture" width="80%" />
+  <img src="./img/Cozying System Architecture.png" alt="Cozying System Architecture" width="80%" style="background-color: #fff;" />
+</div>
+<div align="center">
+  <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: #fff;" />
 </div>
 
 ## 6. 기술 스택
 
+|            | 기술 스택                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :--------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 프론트엔드 | ![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=fff) ![NuxtUI](https://img.shields.io/badge/NuxtUI-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtSEO](https://img.shields.io/badge/NuxtSEO-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtI18N](https://img.shields.io/badge/NuxtI18N-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![GoogleMap](https://img.shields.io/badge/GoogleMap-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white) |
+|   백엔드   | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FF0000?style=for-the-badge&logo=typeorm&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![aws-sdk](https://img.shields.io/badge/aws--sdk-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+
 ## 7. 활용 방안 및 기대 효과
 
-## 8. 관련 자료
+### 활용 방안
+
+- Cozying.ai의 정보를 바탕으로 SNS 마케팅 진행
+- Cozying.ai의 정보를 바탕으로 현지 Realtor들과의 파트너십 구축
+
+### 기대 효과
+
+- Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가
