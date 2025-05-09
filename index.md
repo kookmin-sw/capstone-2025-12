@@ -80,11 +80,35 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ## 시스템 구조
 
-<div align="center">
+**전체 시스템 아키텍처**
+
+<div align="center" style="margin-bottom: 16px">
   <img src="./img/Cozying System Architecture.png" alt="Cozying System Architecture" width="80%" style="background-color: white;" />
 </div>
-<div align="center">
+
+**백엔드 아키텍처**
+
+<div align="center" style="margin-bottom: 16px">
   <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
+</div>
+
+**프론트엔드 URL**
+
+> 검색 노출 및 SEO를 위한 URL 구조 생성
+
+| 검색 유형    | URL 구조                            |
+| ------------ | ----------------------------------- |
+| county       | `/{county}-county`                  |
+| city         | `/{city}-{state}`                   |
+| zip code     | `/{city}-{state}-{zip}`             |
+| neighborhood | `/{neighborhood}_{city}-{state}`    |
+| street       | `/{state}/{city}/{street}/{homeId}` |
+
+위의 URL 구조를 바탕으로 Open Graph 태그를 생성한다.
+
+<div align="center" style="margin-bottom: 16px">
+  <img src="img/capstone-og태그.png" alt="capstone OG 태그 예시1" width="49%" style="display: inline-block; margin-right: 1%; vertical-align: top;" />
+  <img src="img/capstone-og태그2.png" alt="capstone OG 태그 예시2" width="49%" style="display: inline-block; vertical-align: top;" />
 </div>
 
 ## 기술 스택
@@ -98,7 +122,10 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ### 협업 방식
 
-**AWS Code Pipeline**
+**AWS CodePipeline**
+
+- Git과 AWS CodePipeline을 사용하여 레포지토리 관리 및 배포 환경을 구성
+- `main`, `develop`, `feature` 브랜치를 활용하여 기능 개발
 
 <div align="center">
   <img src="img/Capstone Codepipeline Diagram.jpg" alt="AWS CodePipeline 다이어그램" width="80%" style="background-color: white;" />
@@ -106,14 +133,19 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 **Notion**
 
+- Notion을 통해 업무 내용을 정리 및 공유
+
 <div align="center">
   <img src="img/협업-notion.png" alt="Notion 협업 예시" width="80%" style="background-color: white;" />
 </div>
 
 **Slack**
 
+- Slack을 통해 팀원 및 다른 부서의 팀원으로부터 피드백을 주고받음
+
 <div align="center">
-  <img src="img/협업-slack.jpg" alt="Slack 협업 예시" width="80%" style="background-color: white;" />
+  <img src="img/협업-slack.png" alt="Slack 협업 예시" width="49%" style="display: inline-block; margin-right: 1%; vertical-align: top;" />
+  <img src="img/협업-slack2.png" alt="Slack 협업 예시" width="49%" style="display: inline-block; vertical-align: top;" />
 </div>
 
 ### 활용 방안
@@ -133,7 +165,12 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ### 기대 효과
 
-- Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가
+개발 전 대비 상승한 노출수와 크릭수를 바탕으로 Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가할 것을 기대한다.
+
+<div align="center">
+  <img src="img/조회수.png" alt="조회수 그래프1" width="49%" style="display: inline-block; margin-right: 1%;" />
+  <img src="img/클릭수.png" alt="조회수 그래프2" width="49%" style="display: inline-block;" />
+</div>
 
 ## 관련 자료
 
