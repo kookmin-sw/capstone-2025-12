@@ -81,10 +81,10 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 ## 시스템 구조
 
 <div align="center">
-  <img src="./img/Cozying System Architecture.png" alt="Cozying System Architecture" width="80%" style="background-color: #fff;" />
+  <img src="./img/Cozying System Architecture.png" alt="Cozying System Architecture" width="80%" style="background-color: white;" />
 </div>
 <div align="center">
-  <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: #fff;" />
+  <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
 </div>
 
 ## 기술 스택
@@ -98,7 +98,23 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ### 협업 방식
 
-## 활용 방안 및 기대 효과
+**AWS Code Pipeline**
+
+<div align="center">
+  <img src="img/Capstone Codepipeline Diagram.jpg" alt="AWS CodePipeline 다이어그램" width="80%" style="background-color: white;" />
+</div>
+
+**Notion**
+
+<div align="center">
+  <img src="img/협업-notion.png" alt="Notion 협업 예시" width="80%" style="background-color: white;" />
+</div>
+
+**Slack**
+
+<div align="center">
+  <img src="img/협업-slack.jpg" alt="Slack 협업 예시" width="80%" style="background-color: white;" />
+</div>
 
 ### 활용 방안
 
