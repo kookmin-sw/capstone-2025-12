@@ -6,21 +6,3 @@ url: "https://kookmin-sw.github.io/capstone-2025-12/"
 
 aux_links:
   GitHub Repository: https://github.com/kookmin-sw/captone-2025
-
-nav:
-  - title: "1. 프로젝트 소개"
-    url: "/index#1-프로젝트-소개"
-  - title: "2. 소개 영상"
-    url: "/index#2-소개-영상"
-  - title: "3. 팀 소개"
-    url: "/index#3-팀-소개"
-  - title: "4. 주요 기능"
-    url: "/index#4-주요-기능"
-  - title: "5. 시스템 구조"
-    url: "/index#5-시스템-구조"
-  - title: "6. 기술 스택"
-    url: "/index#6-기술-스택"
-  - title: "7. 활용 방안 및 기대 효과"
-    url: "/index#7-활용-방안-및-기대-효과"
-  - title: "8. 관련 자료"
-    url: "/index#8-관련-자료"
