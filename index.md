@@ -6,17 +6,17 @@
 
 ## 목차
 
-1.  [1. 프로젝트 소개](#1-프로젝트-소개)
-2.  [2. 소개 영상](#2-소개-영상)
-3.  [3. 팀 소개](#3-팀-소개)
-4.  [4. 주요 기능](#4-주요-기능)
-5.  [5. 시스템 구조](#5-시스템-구조)
-6.  [6. 기술 스택](#6-기술-스택)
-7.  [7. 협업 방식](#7-협업-방식)
-8.  [8. 활용 방안 및 기대 효과](#8-활용-방안-및-기대-효과)
-9.  [9. 관련 자료](#9-관련-자료)
+1.  [프로젝트 소개](#프로젝트-소개)
+2.  [소개 영상](#소개-영상)
+3.  [팀 소개](#팀-소개)
+4.  [주요 기능](#주요-기능)
+5.  [시스템 구조](#시스템-구조)
+6.  [기술 스택](#기술-스택)
+7.  [협업 방식](#협업-방식)
+8.  [활용 방안 및 기대 효과](#활용-방안-및-기대-효과)
+9.  [관련 자료](#관련-자료)
 
-## 1. 프로젝트 소개
+## 프로젝트 소개
 
 본 프로젝트는 미국 내 모기지 렌더(Mortgage Lender)로 활동 중인 **Habitfactory USA, INC**(이하 해빗팩토리)와의 산학 협력을 통해 진행한다.
 미국 부동산 정보를 효율적으로 탐색하고, 실질적인 대출 연계까지 가능한 **온라인 부동산 플랫폼 Cozying.ai**의 기획 및 개발을 주요 목표로 삼는다.
@@ -36,18 +36,18 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ✅ 대용량 부동산 데이터를 효율적으로 관리하고, 팀 내 여러 부서에서 데이터를 활용할 수 있는 시스템 구축
 
-## 2. 소개 영상
+## 소개 영상
 
 (프로젝트 소개하는 영상을 추가하세요)
 
-## 3. 팀 소개
+## 팀 소개
 
 | <img width="60" src="https://github.com/hwna00.png"> |
 | :--------------------------------------------------: |
 |  [하철환(\*\*\*\*3157)](https://github.com/hwna00)   |
 |                      Full Stack                      |
 
-## 4. 주요 기능
+## 주요 기능
 
 ### 매물 검색
 
@@ -78,7 +78,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 - sqft, sqm, 평 단위 간 전환 기능을 제공하여 다양한 단위로 매물 정보를 조회할 수 있다.
 - LLM과 부동산 특화 프롬프트를 활용하여 자연스러운 한국어 번역을 지원한다.
 
-## 5. 시스템 구조
+## 시스템 구조
 
 <div align="center">
   <img src="./img/Cozying System Architecture.png" alt="Cozying System Architecture" width="80%" style="background-color: #fff;" />
@@ -87,18 +87,18 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
   <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: #fff;" />
 </div>
 
-## 6. 기술 스택
+## 기술 스택
 
 |            | 기술 스택                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | :--------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 프론트엔드 | ![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=fff) ![NuxtUI](https://img.shields.io/badge/NuxtUI-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtSEO](https://img.shields.io/badge/NuxtSEO-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtI18N](https://img.shields.io/badge/NuxtI18N-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![GoogleMap](https://img.shields.io/badge/GoogleMap-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white) |
 |   백엔드   | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FF0000?style=for-the-badge&logo=typeorm&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![aws-sdk](https://img.shields.io/badge/aws--sdk-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-## 7. 협업 방식
+## 협업 방식
 
 ### 협업 방식
 
-## 8. 활용 방안 및 기대 효과
+## 활용 방안 및 기대 효과
 
 ### 활용 방안
 
@@ -119,7 +119,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 - Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가
 
-## 9. 관련 자료
+## 관련 자료
 
 (추가 예정)
 
