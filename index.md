@@ -177,11 +177,11 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ### 기대 효과
 
-개발 전 대비 상승한 노출수와 크릭수를 바탕으로 Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가할 것을 기대한다.
+개발 전 대비 상승한 노출수와 클릭수를 바탕으로 Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가할 것을 기대한다.
 
 <div align="center">
-  <img src="img/조회수.png" alt="조회수 그래프1" width="49%" style="display: inline-block; margin-right: 1%;" />
-  <img src="img/클릭수.png" alt="조회수 그래프2" width="49%" style="display: inline-block;" />
+  <img src="img/노출수.png" alt="노출수 그래프1" width="49%" style="display: inline-block; margin-right: 1%;" />
+  <img src="img/클릭수.png" alt="클릭수 그래프2" width="49%" style="display: inline-block;" />
 </div>
 
 ## 관련 자료
