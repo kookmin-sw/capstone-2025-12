@@ -40,7 +40,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 ✅ 대용량 부동산 데이터를 효율적으로 관리하고, 팀 내 여러 부서에서 데이터를 활용할 수 있는 시스템 구축
 
-# 소개 영상
+## 소개 영상
 
 (프로젝트 소개하는 영상을 추가하세요)
 
@@ -156,7 +156,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
   <img src="img/협업-slack2.png" alt="Slack 협업 예시" width="49%" style="display: inline-block; vertical-align: top;" />
 </div>
 
-### 활용 방안
+## 활용 방안
 
 **Cozying.ai의 정보를 바탕으로 SNS 마케팅 진행**
 
@@ -171,7 +171,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
   <img src="img/리얼터협업.png" alt="Realtor 협업 예시" width="80%"/>
 </div>
 
-### 기대 효과
+## 기대 효과
 
 개발 전 대비 상승한 노출수와 클릭수를 바탕으로 Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가할 것을 기대한다.
 
