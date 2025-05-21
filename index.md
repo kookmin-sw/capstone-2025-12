@@ -13,8 +13,8 @@
 1.  [프로젝트 소개](#프로젝트-소개)
 2.  [소개 영상](#소개-영상)
 3.  [팀 소개](#팀-소개)
-4.  [주요 기능](#주요-기능)
-5.  [시스템 구조](#시스템-구조)
+4.  [사용방법](#사용-방법)
+5.  [서비스 구현](#서비스-구현)
 6.  [기술 스택](#기술-스택)
 7.  [협업 방식](#협업-방식)
 8.  [활용 방안 및 기대 효과](#활용-방안-및-기대-효과)
@@ -142,7 +142,7 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 - 계산기 안의 툴팁을 통해, 각 용어에 대한 설명을 확인할 수 있다.
 - `Get Pre-approval` 버튼을 클릭하면 Loaning 사이트로 전환되어, 모기지 대출에 필요한 정보를 확인할 수 있다.
 
-## 시스템 구조
+## 서비스 구현
 
 **전체 시스템 아키텍처**
 
@@ -156,6 +156,31 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
   <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
 </div>
 
+- Cron Job 을 통해 주기적으로 MLS로부터 신규 매물 Fetch
+- DB Transaction을 통해 안정적으로 업데이트 로직을 실행
+- Service Layer를 분리하여 각 지역(State/County)별 데이터 처리 로직을 유연하게 관리
+- Adapter Pattern을 활용해 CRMLS, FMLS 등 다양한 MLS 포맷을 일관된 내부 구조로 통합
+
+**한국어 번역**
+
+<div align="center" style="margin-bottom: 16px">
+  <img src="./img/cozying-system-translation.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
+</div>
+
+- Nuxt I18N 모듈을 호라용하여 정적인 번역 제공
+- LLM과 프롬프트를 사용하여 매물 정보에 대한 한국어 번역 제공
+
+아래 표는 동일한 부동산 매물 문장을 다양한 번역 도구(Google 번역기, DeepL, gpt-4o-mini)를 통해 번역한 결과를 비교한 것으로, `turnkey`와 같은 부동산 전문 용어의 맥락 전달력 차이를 보여준다.
+
+여기서 turnkey는 “즉시 입주 가능한 완성형 주택”을 의미하며, 별도의 수리나 공사 없이 바로 거주가 가능한 상태를 뜻하는 미국 부동산 용어이다.
+
+| 구분                       | 번역 결과                                                                                                                                                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **원문**                   | … With upgraded flooring and countertops, this **turnkey home** is move-in ready. Plus, enjoy biking to the new Great Park and Wild Rivers Water Park this summer!                                           |
+| **Google 번역기**          | … 고급 바닥재와 조리대가 설치된 이 **턴키(Turnkey) 주택**은 즉시 입주 가능합니다. 이번 여름에는 새롭게 조성된 그레이트 파크와 와일드 리버스 워터파크까지 자전거를 타고 즐거운 시간을 보내세요!               |
+| **DeepL**                  | … 업그레이드된 바닥재와 조리대를 갖춘 이 **턴키 주택**은 바로 입주할 수 있습니다. 또한 올여름에는 새로운 그레이트 파크와 와일드 리버 워터파크에서 자전거를 즐겨보세요!                                       |
+| **gpt-4o-mini (LLM 기반)** | 바닥재와 조리대가 업그레이드된 이 집은 **즉시 입주 가능한 완성형 주택**입니다. 또한, 올여름에는 자전거를 타고 새롭게 조성된 Great Park와 Wild Rivers Water Park까지 이동하며 야외 활동을 만끽할 수 있습니다. |
+
 **프론트엔드 URL**
 
 > 검색 노출 및 SEO를 위한 URL 구조 생성
@@ -168,7 +193,7 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | neighborhood | `/{neighborhood}_{city}-{state}`    |
 | street       | `/{state}/{city}/{street}/{homeId}` |
 
-위의 URL 구조를 바탕으로 Open Graph 태그를 생성한다.
+위의 URL 구조를 바탕으로 Open Graph 태그를 생성하여 SEO 최적화를 시도했다.
 
 <div align="center" style="margin-bottom: 16px">
   <img src="img/capstone-og태그.png" alt="capstone OG 태그 예시1" width="49%" style="display: inline-block; margin-right: 1%; vertical-align: top;" />
@@ -182,8 +207,6 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | 프론트엔드 | ![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=fff) ![NuxtUI](https://img.shields.io/badge/NuxtUI-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtSEO](https://img.shields.io/badge/NuxtSEO-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtI18N](https://img.shields.io/badge/NuxtI18N-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![GoogleMap](https://img.shields.io/badge/GoogleMap-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white) |
 |   백엔드   | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FF0000?style=for-the-badge&logo=typeorm&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![aws-sdk](https://img.shields.io/badge/aws--sdk-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-<!-- TODO: 협업 방식이라고 하지 말고, 타 부서와 협업한 내용도 추가하기 -->
-
 ## 협업 방식
 
 ### 코드 관리
@@ -196,9 +219,12 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 
 <br/>
 
-AWS CodeCommit을 통해 레포지토리를 관리하고, CodeBuild와 CodeDeploy를 통해 자동화된 배포환경을 구축하였다.
-
-브랜치는 Github Flow 전략을 사용하여 관리하였다. main 브랜치는 운영 가능한 상태로 유지하고, 실제 작업 및 테스트는 develop 브랜치와 feature 브랜치에서 이루어졌다. 새로운 기능의 개발은 develop에서 분기한 feature 브랜치에서 이루어졌다. feature 브랜치의 내용은 develop에 병합되어 개발 환경에서 테스트를 거친 이후 main으로 병합되어 안전한 운영 환경을 유지하였다.
+- AWS Codecommit을 통해 소스코드 관리
+- CodeBuild와 CodeDeploy를 통해 자동화된 배포환경을 구축
+- Github Flow 전략을 사용하여 브랜치를 관리
+  - main: 운영 가능한 상태로 유지
+  - develop: 기능 통합 테스트
+  - feature: 새로운 기능 개발
 
 ### 문서 관리
 
