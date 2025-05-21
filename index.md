@@ -1,7 +1,5 @@
 # 미국 부동산 탐색 플랫폼, [Cozying.ai](https://cozying.ai)
 
-{: .no_toc }
-
 **산학연계 자유주제**
 
 <div align="center" style="margin-top: 64px; margin-bottom: 64px;">
@@ -11,8 +9,6 @@
 본 프로젝트의 소스코드는 참여 기업의 요청으로, 담당 교수님과의 논의 후 비공개하기로 결정하였습니다.
 
 ## 목차
-
-{:toc}
 
 1.  [프로젝트 소개](#프로젝트-소개)
 2.  [소개 영상](#소개-영상)
@@ -185,8 +181,6 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 </div>
 
 ## 관련 자료
-
-(추가 예정)
 
 - [중간 발표 자료](https://drive.google.com/file/d/1UNU74_llJY3mxuVGz1hk-Zh_f6rMqUz8/view?usp=sharing)
 - [포스터](https://drive.google.com/file/d/1WFEYLmeG0RcIWCfBUfccKdkBSn990Q6g/view?usp=sharing)
