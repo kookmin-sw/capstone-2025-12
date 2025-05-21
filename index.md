@@ -1,4 +1,4 @@
-## 미국 부동산 탐색 플랫폼, [Cozying.ai](https://cozying.ai)
+# 미국 부동산 탐색 플랫폼, [Cozying.ai](https://cozying.ai)
 
 {: .no_toc }
 
@@ -10,7 +10,7 @@
 
 본 프로젝트의 소스코드는 참여 기업의 요청으로, 담당 교수님과의 논의 후 비공개하기로 결정하였습니다.
 
-# 목차
+## 목차
 
 {:toc}
 
@@ -24,7 +24,7 @@
 8.  [활용 방안 및 기대 효과](#활용-방안-및-기대-효과)
 9.  [관련 자료](#관련-자료)
 
-# 프로젝트 소개
+## 프로젝트 소개
 
 본 프로젝트는 미국 내 모기지 렌더(Mortgage Lender)로 활동 중인 **Habitfactory USA, INC**(이하 해빗팩토리)와의 산학 협력을 통해 진행한다.
 미국 부동산 정보를 효율적으로 탐색하고, 실질적인 대출 연계까지 가능한 **온라인 부동산 플랫폼 Cozying.ai**의 기획 및 개발을 주요 목표로 삼는다.
@@ -188,7 +188,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 (추가 예정)
 
-- 중간 발표 자료
-- 포스트
-- 최종 발표자료
-- 결과보고서
+- [중간 발표 자료](https://drive.google.com/file/d/1UNU74_llJY3mxuVGz1hk-Zh_f6rMqUz8/view?usp=sharing)
+- [포스터](https://drive.google.com/file/d/1WFEYLmeG0RcIWCfBUfccKdkBSn990Q6g/view?usp=sharing)
+- [최종 발표자료](https://drive.google.com/file/d/1qDduAgvGArl4cnC9ol3Hmlaw3-JcqQ1W/view?usp=sharing)
+- [결과보고서](https://docs.google.com/document/d/18CM3sdQE5zqWrj1B63b7y-3w0rI4Mpa6/edit?usp=sharing&ouid=116310879167524674498&rtpof=true&sd=true)

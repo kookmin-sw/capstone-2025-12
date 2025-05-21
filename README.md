@@ -118,7 +118,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
   <img src="img/협업-slack.jpg" alt="Slack 협업 예시" width="80%" style="background-color: white;" />
 </div>
 
-### 활용 방안
+## 활용 방안
 
 **Cozying.ai의 정보를 바탕으로 SNS 마케팅 진행**
 
@@ -133,7 +133,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
   <img src="img/리얼터협업.png" alt="Realtor 협업 예시" width="80%"/>
 </div>
 
-### 기대 효과
+## 기대 효과
 
 - Cozying.ai를 통해 Loaning.ai 서비스로 전환되는 고객 수 증가
 
@@ -141,7 +141,7 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 
 (추가 예정)
 
-- 중간 발표 자료
+- [중간 발표 자료](https://drive.google.com/file/d/1UNU74_llJY3mxuVGz1hk-Zh_f6rMqUz8/view?usp=sharing)
 - 포스트
 - 최종 발표자료
 - 결과보고서
