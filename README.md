@@ -13,8 +13,8 @@
 1.  [프로젝트 소개](#프로젝트-소개)
 2.  [소개 영상](#소개-영상)
 3.  [팀 소개](#팀-소개)
-4.  [주요 기능](#주요-기능)
-5.  [시스템 구조](#시스템-구조)
+4.  [사용방법](#사용-방법)
+5.  [서비스 구현](#서비스-구현)
 6.  [기술 스택](#기술-스택)
 7.  [협업 방식](#협업-방식)
 8.  [활용 방안 및 기대 효과](#활용-방안-및-기대-효과)
@@ -51,42 +51,98 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | <img width="60" src="https://github.com/hwna00.png"> |
 | :--------------------------------------------------: |
 |  [하철환(\*\*\*\*3157)](https://github.com/hwna00)   |
-|                      Full Stack                      |
+|            Full Stack Service Development            |
 
-<!-- TODO: 주요 기능에 대한 설명을 글도 더 추가하기 (간단해보이지 않도록) -->
+## 사용 방법
 
-## 주요 기능
-
-### 매물 검색
+### 메인 화면
 
 <div align="center">
-  <img src="img/매물검색1.png" alt="매물 검색 예시 1" width="49%" style="display: inline-block; margin-right: 1%;" />
-  <img src="img/매물검색2.png" alt="매물 검색 예시 2" width="49%" style="display: inline-block;" />
+  <img src="img/capstone_guide_main-screen.png" alt="메인 화면 예시" width="80%"/>
 </div>
 
-- 사용자가 주소를 입력할 때 Google Place Autocomplete API를 활용하여 쉽고 빠르게 주소를 검색할 수 있도록 지원한다. 또한, 다양한 사용자 입력 예외 상황도 효과적으로 처리한다.
+1번: 헤더
+
+- `Buy` 및 `Rent` 매물 목록 보기로 가는 바로가기 버튼을 제공한다.
+- `Mortgage` 버튼을 클릭하면 Loaning의 모기지 확인 서비스로 이동한다.
+- `Blog` 버튼을 클릭하면 회사에서 운영하는 마케팅 채널로 이동한다.
+  - 언어 설정을 영어로 하고 접속 시, 워드프레스 영어 블로그로 이동한다.
+  - 언어 설정을 한국어로 하고 접속 시, 네이버 블로그로 이동한다.
+- `Sell` 버튼을 클릭하면 ‘부동산 판매하기’ 페이지로 이동한다.
+- `Korean` 버튼을 누르면 사이트가 한국어로 번역된다.
+  - 한국어로 설정되어 있을 때는 `English` 버튼이 보이게 된다.
+- `My home` 버튼을 클릭하면 마이 페이지로 이동하게 된다.
+  - 만약 로그인이 되어있지 않다면 로그인 모달이 뜨게 된다.
+
+2번: 지역 검색하기
+
+- 원하는 지역을 검색할 수 있는 입력창이다.
+
+3번: 문의하기
+
+- Channel Talk 을 이용한 문의하기 버튼이다.
+
+### 검색 기반 매물 추천
+
+<div align="center">
+  <img src="img/capstone_guide_search-based-rec.png" alt="검색 기반 추천" width="80%"/>
+</div>
+
+최근 검색한 지역이 있는 경우, 해당 지역의 매물을 최상단에 보여준다.
+만약 최근 검색한 지역이 없거나, 해당 지역의 매물 수가 적은 경우에는 나타나지 않는다.
+
+### 검색 결과 화면
+
+<div align="center">
+  <img src="img/capstone_guide_list-screen.png" alt="검색 결과 화면" width="80%"/>
+</div>
+
+1번: 검색 옵션
+
+- 좌측의 검색창을 통해 매물을 탐색하고자 하는 주소를 검색할 수 있다.
+- 매물 타입, 가격, 그리고 집의 특징으로 필터링 옵션을 선택할 수 있다.
+- 가장 우측에 `Save Searches` 버튼을 클릭하면 현재 검색 옵션을 저장할 수 있다. 저장한 옵션은 마이페이지에서 확인 가능하다.
+
+2번: 검색 결과
+
+- 검색어 및 필터를 설정하고 검색한 결과를 카드 형태의 컴포넌트로 확인할 수 있다.
+
+3번: 지도
+
+- 검색 결과를 우측의 지도를 통해서 확인할 수 있다.
+- 지도의 하단 가운데 `Remove Boundary` 버튼을 통해 현재 적용된 검색 결과를 해제할 수 있다.
+
+4번: Loaning 전환 배너
+
+- 검색 결과 사이에 사용자를 Loaning으로 유도할 수 있는 배너이다. 배너에는 오늘의 이자율, 이자율 비교 등의 정보가 담겨있다.
+
+### 단위 변환
+
+<div align="center">
+  <img src="img/capstone_guide_detail-screen-unit-convert.png" alt="단위 변환" width="80%"/>
+</div>
+
+1번: 변환 버튼
+
+- 단위를 전환할 수 있는 버튼이다.
+- 언어가 영어인 경우 sqft, sqm 중에서 선택 가능하다.
+- 언어가 한국어인 경우에는 sqft, sqm, 평 중에서 선택 가능하다.
+
+2번: 변화 결과
+
+- 단위가 변환되면 그에 따른 영향을 받는 부분이다.
 
 ### 예상 비용 계산
 
 <div align="center">
-  <img src="img/가격계산.png" alt="예상 비용 계산 예시" width="80%"/>
+  <img src="img/capstone_guide_detail-screen-calculator.png" alt="단위 변환" width="80%"/>
 </div>
 
-- 매물 정보를 기반으로 월별 예상 비용을 산출한다.
-- Loaning.ai의 데이터를 활용하여 최적화된 금리를 추천한다.
-- 모기지 대출이 필요한 고객을 Loaning.ai로 자연스럽게 연계한다.
+- 우측의 `Payment Calculator` 기능을 활용하여, 현재 보고 있는 매물을 구매했을 때 예상되는 월별 지불 비용을 계산할 수 있다.
+- 계산기 안의 툴팁을 통해, 각 용어에 대한 설명을 확인할 수 있다.
+- `Get Pre-approval` 버튼을 클릭하면 Loaning 사이트로 전환되어, 모기지 대출에 필요한 정보를 확인할 수 있다.
 
-### 한국어 번역 및 단위 전환
-
-<div align="center">
-  <img src="img/번역.png" alt="한국어 번역 및 단위 전환 예시" width="80%"/>
-</div>
-
-- 우측 상단의 언어 변환 버튼을 통해 손쉽게 언어를 변경할 수 있다.
-- sqft, sqm, 평 단위 간 전환 기능을 제공하여 다양한 단위로 매물 정보를 조회할 수 있다.
-- LLM과 부동산 특화 프롬프트를 활용하여 자연스러운 한국어 번역을 지원한다.
-
-## 시스템 구조
+## 서비스 구현
 
 **전체 시스템 아키텍처**
 
@@ -100,6 +156,42 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
   <img src="./img/capstone.drawio.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
 </div>
 
+- Cron Job 을 통해 주기적으로 MLS로부터 신규 매물 Fetch
+- DB Transaction을 통해 안정적으로 업데이트 로직을 실행
+- Service Layer를 분리하여 각 지역(State/County)별 데이터 처리 로직을 유연하게 관리
+- Adapter Pattern을 활용해 CRMLS, FMLS 등 다양한 MLS 포맷을 일관된 내부 구조로 통합
+
+**한국어 번역**
+
+<div align="center" style="margin-bottom: 16px">
+  <img src="./img/cozying-system-translation.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
+</div>
+
+- Nuxt I18N 모듈을 활용하여 정적인 번역 제공
+- LLM과 프롬프트를 사용하여 매물 정보에 대한 한국어 번역 제공
+
+아래 표는 동일한 부동산 매물 문장을 다양한 번역 도구(Google 번역기, DeepL, gpt-4o-mini)를 통해 번역한 결과를 비교한 것으로, `turnkey`와 같은 부동산 전문 용어의 맥락 전달력 차이를 보여준다.
+
+여기서 turnkey는 “즉시 입주 가능한 완성형 주택”을 의미하며, 별도의 수리나 공사 없이 바로 거주가 가능한 상태를 뜻하는 미국 부동산 용어이다.
+
+| 구분                       | 번역 결과                                                                                                                                                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **원문**                   | … With upgraded flooring and countertops, this **turnkey home** is move-in ready. Plus, enjoy biking to the new Great Park and Wild Rivers Water Park this summer!                                           |
+| **Google 번역기**          | … 고급 바닥재와 조리대가 설치된 이 **턴키(Turnkey) 주택**은 즉시 입주 가능합니다. 이번 여름에는 새롭게 조성된 그레이트 파크와 와일드 리버스 워터파크까지 자전거를 타고 즐거운 시간을 보내세요!               |
+| **DeepL**                  | … 업그레이드된 바닥재와 조리대를 갖춘 이 **턴키 주택**은 바로 입주할 수 있습니다. 또한 올여름에는 새로운 그레이트 파크와 와일드 리버 워터파크에서 자전거를 즐겨보세요!                                       |
+| **gpt-4o-mini (LLM 기반)** | 바닥재와 조리대가 업그레이드된 이 집은 **즉시 입주 가능한 완성형 주택**입니다. 또한, 올여름에는 자전거를 타고 새롭게 조성된 Great Park와 Wild Rivers Water Park까지 이동하며 야외 활동을 만끽할 수 있습니다. |
+
+**이미지 Lazy Loading**
+
+<div align="center" style="margin-bottom: 16px">
+  <img src="./img/cozying-lazy-loading.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
+</div>
+
+- Cozying.ai는 미국 서부 서버에서 운영되며, MLS 매물 이미지 로딩이 많은 네트워크 리소스를 요구함
+- 이를 해결하기 위해 Intersection Observer API 기반의 커스텀 LazyImg 컴포넌트를 제작하여 안정적으로 lazy loading 구현
+- 별도 라이브러리 없이 브라우저 네이티브 기능만으로 제작해 유지보수성과 재사용성 확보, 전체 이미지에 일괄 적용 가능
+- 개발자 도구의 네트워크 탭을 통해 실제 이미지가 viewport 진입 시 로드되는 것을 확인할 수 있음
+
 **프론트엔드 URL**
 
 > 검색 노출 및 SEO를 위한 URL 구조 생성
@@ -112,7 +204,7 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | neighborhood | `/{neighborhood}_{city}-{state}`    |
 | street       | `/{state}/{city}/{street}/{homeId}` |
 
-위의 URL 구조를 바탕으로 Open Graph 태그를 생성한다.
+위의 URL 구조를 바탕으로 Open Graph 태그를 생성하여 SEO 최적화를 시도했다.
 
 <div align="center" style="margin-bottom: 16px">
   <img src="img/capstone-og태그.png" alt="capstone OG 태그 예시1" width="49%" style="display: inline-block; margin-right: 1%; vertical-align: top;" />
@@ -126,8 +218,6 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | 프론트엔드 | ![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=fff) ![NuxtUI](https://img.shields.io/badge/NuxtUI-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtSEO](https://img.shields.io/badge/NuxtSEO-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtI18N](https://img.shields.io/badge/NuxtI18N-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![GoogleMap](https://img.shields.io/badge/GoogleMap-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white) |
 |   백엔드   | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FF0000?style=for-the-badge&logo=typeorm&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![aws-sdk](https://img.shields.io/badge/aws--sdk-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-<!-- TODO: 협업 방식이라고 하지 말고, 타 부서와 협업한 내용도 추가하기 -->
-
 ## 협업 방식
 
 ### 코드 관리
@@ -140,9 +230,12 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 
 <br/>
 
-AWS CodeCommit을 통해 레포지토리를 관리하고, CodeBuild와 CodeDeploy를 통해 자동화된 배포환경을 구축하였다.
-
-브랜치는 Github Flow 전략을 사용하여 관리하였다. main 브랜치는 운영 가능한 상태로 유지하고, 실제 작업 및 테스트는 develop 브랜치와 feature 브랜치에서 이루어졌다. 새로운 기능의 개발은 develop에서 분기한 feature 브랜치에서 이루어졌다. feature 브랜치의 내용은 develop에 병합되어 개발 환경에서 테스트를 거친 이후 main으로 병합되어 안전한 운영 환경을 유지하였다.
+- AWS Codecommit을 통해 소스코드 관리
+- CodeBuild와 CodeDeploy를 통해 자동화된 배포환경을 구축
+- Github Flow 전략을 사용하여 브랜치를 관리
+  - main: 운영 가능한 상태로 유지
+  - develop: 기능 통합 테스트
+  - feature: 새로운 기능 개발
 
 ### 문서 관리
 
@@ -214,5 +307,5 @@ AWS CodeCommit을 통해 레포지토리를 관리하고, CodeBuild와 CodeDeplo
 
 - [중간 발표 자료](https://drive.google.com/file/d/1UNU74_llJY3mxuVGz1hk-Zh_f6rMqUz8/view?usp=sharing)
 - [포스터](https://drive.google.com/file/d/1WFEYLmeG0RcIWCfBUfccKdkBSn990Q6g/view?usp=sharing)
-- [최종 발표자료](https://drive.google.com/file/d/1qDduAgvGArl4cnC9ol3Hmlaw3-JcqQ1W/view?usp=sharing)
+- [최종 발표자료](https://docs.google.com/presentation/d/1bPRViR5_9dUePePBSnXcmkBEgDY8DCrgLJMDRfB02yQ/edit?usp=sharing)
 - [결과보고서](https://docs.google.com/document/d/18CM3sdQE5zqWrj1B63b7y-3w0rI4Mpa6/edit?usp=sharing&ouid=116310879167524674498&rtpof=true&sd=true)
