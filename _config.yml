@@ -11,3 +11,4 @@ search_enabled: false
 favicon_ico: "/img/favicon-32x32.png"
 nav_enabled: true
 color_scheme: dark
+color_scheme: custom
