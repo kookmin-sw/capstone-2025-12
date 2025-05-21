@@ -1,8 +1,12 @@
 # 미국 부동산 탐색 플랫폼, [Cozying.ai](https://cozying.ai)
 
+**산학연계 자유주제**
+
 <div align="center" style="margin-top: 64px; margin-bottom: 64px;">
   <img src="https://cozying.ai/_nuxt/logo.BQ3eztxh.svg" />
 </div>
+
+본 프로젝트의 소스코드는 참여 기업의 요청으로, 담당 교수님과의 논의 후 비공개하기로 결정하였습니다.
 
 ## 목차
 
@@ -46,6 +50,8 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 | :--------------------------------------------------: |
 |  [하철환(\*\*\*\*3157)](https://github.com/hwna00)   |
 |                      Full Stack                      |
+
+<!-- TODO: 주요 기능에 대한 설명을 글도 더 추가하기 (간단해보이지 않도록) -->
 
 ## 주요 기능
 
@@ -117,6 +123,8 @@ Cozying.ai는 이 데이터를 활용하여 사용자가 **직관적인 UI/UX를
 | :--------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 프론트엔드 | ![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=fff) ![NuxtUI](https://img.shields.io/badge/NuxtUI-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtSEO](https://img.shields.io/badge/NuxtSEO-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![NuxtI18N](https://img.shields.io/badge/NuxtI18N-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![GoogleMap](https://img.shields.io/badge/GoogleMap-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white) |
 |   백엔드   | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FF0000?style=for-the-badge&logo=typeorm&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![aws-sdk](https://img.shields.io/badge/aws--sdk-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+
+<!-- TODO: 협업 방식이라고 하지 말고, 타 부서와 협업한 내용도 추가하기 -->
 
 ## 협업 방식
 
