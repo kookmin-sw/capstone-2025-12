@@ -44,7 +44,7 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 
 ## 소개 영상
 
-(프로젝트 소개하는 영상을 추가하세요)
+[![Watch demo](img/thumbnail.png)](https://youtu.be/eBBy53jClZ0)
 
 ## 팀 소개
 

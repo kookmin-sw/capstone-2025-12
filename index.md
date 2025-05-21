@@ -44,7 +44,7 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 
 ## 소개 영상
 
-(프로젝트 소개하는 영상을 추가하세요)
+[![Watch demo](img/thumbnail.png)](https://youtu.be/eBBy53jClZ0)
 
 ## 팀 소개
 
@@ -52,8 +52,6 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | :--------------------------------------------------: |
 |  [하철환(\*\*\*\*3157)](https://github.com/hwna00)   |
 |                      Full Stack                      |
-
-<!-- TODO: 주요 기능에 대한 설명을 글도 더 추가하기 (간단해보이지 않도록) -->
 
 ## 주요 기능
 
@@ -64,7 +62,8 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
   <img src="img/매물검색2.png" alt="매물 검색 예시 2" width="49%" style="display: inline-block;" />
 </div>
 
-- 사용자가 주소를 입력할 때 Google Place Autocomplete API를 활용하여 쉽고 빠르게 주소를 검색할 수 있도록 지원한다. 또한, 다양한 사용자 입력 예외 상황도 효과적으로 처리한다.
+- Google Place Autocomplete API를 활용하여 쉽고 빠르게 주소를 검색할 수 있도록 지원
+- 입력 상황에서 발생할 수 있는 예외 상황을 효과적으로 처리
 
 ### 예상 비용 계산
 
