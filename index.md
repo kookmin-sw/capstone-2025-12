@@ -51,39 +51,96 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | <img width="60" src="https://github.com/hwna00.png"> |
 | :--------------------------------------------------: |
 |  [하철환(\*\*\*\*3157)](https://github.com/hwna00)   |
-|                      Full Stack                      |
+|            Full Stack Service Development            |
 
-## 주요 기능
+## 사용 방법
 
-### 매물 검색
+### 메인 화면
 
 <div align="center">
-  <img src="img/매물검색1.png" alt="매물 검색 예시 1" width="49%" style="display: inline-block; margin-right: 1%;" />
-  <img src="img/매물검색2.png" alt="매물 검색 예시 2" width="49%" style="display: inline-block;" />
+  <img src="img/capstone_guide_main-screen.png" alt="메인 화면 예시" width="80%"/>
 </div>
 
-- Google Place Autocomplete API를 활용하여 쉽고 빠르게 주소를 검색할 수 있도록 지원
-- 입력 상황에서 발생할 수 있는 예외 상황을 효과적으로 처리
+1번: 헤더
+
+- `Buy` 및 `Rent` 매물 목록 보기로 가는 바로가기 버튼을 제공한다.
+- `Mortgage` 버튼을 클릭하면 Loaning의 모기지 확인 서비스로 이동한다.
+- `Blog` 버튼을 클릭하면 회사에서 운영하는 마케팅 채널로 이동한다.
+  - 언어 설정을 영어로 하고 접속 시, 워드프레스 영어 블로그로 이동한다.
+  - 언어 설정을 한국어로 하고 접속 시, 네이버 블로그로 이동한다.
+- `Sell` 버튼을 클릭하면 ‘부동산 판매하기’ 페이지로 이동한다.
+- `Korean` 버튼을 누르면 사이트가 한국어로 번역된다.
+  - 한국어로 설정되어 있을 때는 `English` 버튼이 보이게 된다.
+- `My home` 버튼을 클릭하면 마이 페이지로 이동하게 된다.
+  - 만약 로그인이 되어있지 않다면 로그인 모달이 뜨게 된다.
+
+2번: 지역 검색하기
+
+- 원하는 지역을 검색할 수 있는 입력창이다.
+
+3번: 문의하기
+
+- Channel Talk 을 이용한 문의하기 버튼이다.
+
+### 검색 기반 매물 추천
+
+<div align="center">
+  <img src="img/capstone_guide_search-based-rec.png" alt="검색 기반 추천" width="80%"/>
+</div>
+
+최근 검색한 지역이 있는 경우, 해당 지역의 매물을 최상단에 보여준다.
+만약 최근 검색한 지역이 없거나, 해당 지역의 매물 수가 적은 경우에는 나타나지 않는다.
+
+### 검색 결과 화면
+
+<div align="center">
+  <img src="img/capstone_guide_list-screen.png" alt="검색 결과 화면" width="80%"/>
+</div>
+
+1번: 검색 옵션
+
+- 좌측의 검색창을 통해 매물을 탐색하고자 하는 주소를 검색할 수 있다.
+- 매물 타입, 가격, 그리고 집의 특징으로 필터링 옵션을 선택할 수 있다.
+- 가장 우측에 `Save Searches` 버튼을 클릭하면 현재 검색 옵션을 저장할 수 있다. 저장한 옵션은 마이페이지에서 확인 가능하다.
+
+2번: 검색 결과
+
+- 검색어 및 필터를 설정하고 검색한 결과를 카드 형태의 컴포넌트로 확인할 수 있다.
+
+3번: 지도
+
+- 검색 결과를 우측의 지도를 통해서 확인할 수 있다.
+- 지도의 하단 가운데 `Remove Boundary` 버튼을 통해 현재 적용된 검색 결과를 해제할 수 있다.
+
+4번: Loaning 전환 배너
+
+- 검색 결과 사이에 사용자를 Loaning으로 유도할 수 있는 배너이다. 배너에는 오늘의 이자율, 이자율 비교 등의 정보가 담겨있다.
+
+### 단위 변환
+
+<div align="center">
+  <img src="img/capstone_guide_detail-screen-unit-convert.png" alt="단위 변환" width="80%"/>
+</div>
+
+1번: 변환 버튼
+
+- 단위를 전환할 수 있는 버튼이다.
+- 언어가 영어인 경우 sqft, sqm 중에서 선택 가능하다.
+- 언어가 한국어인 경우에는 sqft, sqm, 평 중에서 선택 가능하다.
+
+2번: 변화 결과
+
+- 단위가 변환되면 그에 따른 영향을 받는 부분이다.
 
 ### 예상 비용 계산
 
 <div align="center">
-  <img src="img/가격계산.png" alt="예상 비용 계산 예시" width="80%"/>
+  <img src="img/capstone_guide_detail-screen-calculator.png" alt="단위 변환" width="80%"/>
 </div>
 
-- 매물 정보를 기반으로 월별 예상 비용을 산출한다.
-- Loaning.ai의 데이터를 활용하여 최적화된 금리를 추천한다.
-- 모기지 대출이 필요한 고객을 Loaning.ai로 자연스럽게 연계한다.
-
-### 한국어 번역 및 단위 전환
-
-<div align="center">
-  <img src="img/번역.png" alt="한국어 번역 및 단위 전환 예시" width="80%"/>
-</div>
-
-- 우측 상단의 언어 변환 버튼을 통해 손쉽게 언어를 변경할 수 있다.
-- sqft, sqm, 평 단위 간 전환 기능을 제공하여 다양한 단위로 매물 정보를 조회할 수 있다.
-- LLM과 부동산 특화 프롬프트를 활용하여 자연스러운 한국어 번역을 지원한다.
+- 우측의 `Payment Calculator` 기능을 활용하여, 현재 보고 있는 매물을 구매했을 때 예상되는 월별 지불 비용을 계산할 수 있다.
+- 계산기 안의 툴팁을 통해, 각 용어에 대한 설명을 확인할 수 있다.
+- `Get Pre-approval` 버튼을 클릭하면 Loaning 사이트로 전환되어, 모기지 대출에 필요한 정보를 확인할 수 있다.
 
 ## 시스템 구조
 
