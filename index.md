@@ -2,11 +2,11 @@
 
 **산학연계 자유주제**
 
+> 본 프로젝트의 소스코드는 참여 기업의 요청으로, 담당 교수님과의 논의 후 비공개하기로 결정하였습니다.
+
 <div align="center" style="margin-top: 64px; margin-bottom: 64px;">
   <img src="https://cozying.ai/_nuxt/logo.BQ3eztxh.svg" />
 </div>
-
-본 프로젝트의 소스코드는 참여 기업의 요청으로, 담당 교수님과의 논의 후 비공개하기로 결정하였습니다.
 
 ## 목차
 
