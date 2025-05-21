@@ -167,7 +167,7 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
   <img src="./img/cozying-system-translation.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
 </div>
 
-- Nuxt I18N 모듈을 호라용하여 정적인 번역 제공
+- Nuxt I18N 모듈을 활용하여 정적인 번역 제공
 - LLM과 프롬프트를 사용하여 매물 정보에 대한 한국어 번역 제공
 
 아래 표는 동일한 부동산 매물 문장을 다양한 번역 도구(Google 번역기, DeepL, gpt-4o-mini)를 통해 번역한 결과를 비교한 것으로, `turnkey`와 같은 부동산 전문 용어의 맥락 전달력 차이를 보여준다.
@@ -180,6 +180,17 @@ Cozying.ai는 미국 부동산 매물 데이터베이스인 **MLS(Multiple Listi
 | **Google 번역기**          | … 고급 바닥재와 조리대가 설치된 이 **턴키(Turnkey) 주택**은 즉시 입주 가능합니다. 이번 여름에는 새롭게 조성된 그레이트 파크와 와일드 리버스 워터파크까지 자전거를 타고 즐거운 시간을 보내세요!               |
 | **DeepL**                  | … 업그레이드된 바닥재와 조리대를 갖춘 이 **턴키 주택**은 바로 입주할 수 있습니다. 또한 올여름에는 새로운 그레이트 파크와 와일드 리버 워터파크에서 자전거를 즐겨보세요!                                       |
 | **gpt-4o-mini (LLM 기반)** | 바닥재와 조리대가 업그레이드된 이 집은 **즉시 입주 가능한 완성형 주택**입니다. 또한, 올여름에는 자전거를 타고 새롭게 조성된 Great Park와 Wild Rivers Water Park까지 이동하며 야외 활동을 만끽할 수 있습니다. |
+
+**이미지 Lazy Loading**
+
+<div align="center" style="margin-bottom: 16px">
+  <img src="./img/cozying-lazy-loading.png" alt="Cozying Backend` Architecture" width="80%" style="background-color: white;" />
+</div>
+
+- Cozying.ai는 미국 서부 서버에서 운영되며, MLS 매물 이미지 로딩이 많은 네트워크 리소스를 요구함
+- 이를 해결하기 위해 Intersection Observer API 기반의 커스텀 LazyImg 컴포넌트를 제작하여 안정적으로 lazy loading 구현
+- 별도 라이브러리 없이 브라우저 네이티브 기능만으로 제작해 유지보수성과 재사용성 확보, 전체 이미지에 일괄 적용 가능
+- 개발자 도구의 네트워크 탭을 통해 실제 이미지가 viewport 진입 시 로드되는 것을 확인할 수 있음
 
 **프론트엔드 URL**
 
