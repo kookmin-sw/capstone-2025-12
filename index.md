@@ -8,6 +8,8 @@
   <img src="https://cozying.ai/_nuxt/logo.BQ3eztxh.svg" />
 </div>
 
+<img src="img/capstone-cozying-poster.jpg" width="100%">
+
 ## 목차
 
 1.  [프로젝트 소개](#프로젝트-소개)
